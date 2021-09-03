@@ -1,7 +1,13 @@
-# Getting Started with Create React App
+# React Color Palette Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Credits
+
+Final project of the UDEMY COURSE : The Modern React Bootcamp (Hooks, Context, NextJS, Router) 
+by : Colt Steele and Colleagues
+
+
+# ____________________________________________________________________
 ## Available Scripts
 
 In the project directory, you can run:
