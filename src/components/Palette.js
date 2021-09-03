@@ -10,6 +10,7 @@ class Palette extends Component {
     }
 
     render() {
+        // This creates the individual instances of ColorBox components
         const colorBoxes = this.props.colors.map(color => (
             <ColorBox background={color.color} name={color.name} />
         ))
