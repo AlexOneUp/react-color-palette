@@ -1,5 +1,5 @@
 import chroma from 'chroma-js';
-const levels = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500];
+const levels = [0, 100, 200, 300, 400, 500, 600, 700, 800, 900];
 
 function generatePalette(starterPalette) {
     let newPalette = {
