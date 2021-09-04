@@ -4,15 +4,11 @@ import './Palette.css';
 
 
 class Palette extends Component {
-    constructor(props) {
-        super(props);
-
-    }
 
     render() {
         // This creates the individual instances of ColorBox components
-        const colorBoxes = this.props.colors.map(color => (
-            <ColorBox background={color.color} name={color.name} />
+        const colorBoxes = this.props.palette.colors[450].map(color => (
+            <ColorBox background={color.hex} name={color.name} />
         ))
 
         return (
