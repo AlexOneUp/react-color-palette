@@ -22,22 +22,34 @@ class Palette extends Component {
     }
 
     render() {
-        const { colors } = this.props.palette;
+        const { colors, paletteName, emoji } = this.props.palette;
         const { level, format } = this.state;
 
         // This creates the individual instances of ColorBox components
         const colorBoxes = colors[this.state.level].map(color => (
-            <ColorBox background={color[format]} name={color.name} />
+            <ColorBox
+                background={color[format]}
+                name={color.name}
+                key={color.id}
+            />
         ))
 
         return (
             <div className="Palette">
-                <NavBar level={level} changeLevel={this.changeLevel} handleFormatChange={this.changeFormat} />
+                <NavBar
+                    level={level}
+                    changeLevel={this.changeLevel}
+                    handleFormatChange={this.changeFormat}
+                />
 
                 <div className="Palette-colors">
                     {/* color boxes  */}
                     {colorBoxes}
                 </div>
+                <footer className="Palette-footer">
+                    {paletteName}
+                    <span className="emoji">{emoji}</span>
+                </footer>
             </div>
         )
     }
